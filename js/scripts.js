@@ -1,4 +1,14 @@
-$(function(){
+$(".warning").fadeOut();
+
+$(document).ready(function() {
+  $(".clickable").click(function() {
+    $(".walrus-showing").toggle();
+    $(".walrus-hidden").toggle();
+    $(".warning").fadeIn();
+  });
+});
+
+/*$(function(){
   $("h1").click(function() {
     alert("This is a header.");
   });
@@ -11,6 +21,7 @@ $(function(){
     alert("This is an image.");
   });
 });
+*/
 
 /*var add = function(number1, number2) {
   return number1 + number2;
