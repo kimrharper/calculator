@@ -4,7 +4,7 @@ $(document).ready(function() {
   $(".clickable").click(function() {
     $(".walrus-showing").toggle();
     $(".walrus-hidden").toggle();
-    $(".warning").fadeIn();
+    $(".warning").fadeToggle(5000);
   });
 });
 
