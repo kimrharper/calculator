@@ -1,4 +1,24 @@
-$(".warning").fadeOut();
+$(function() {
+  $("button#btnjavascript").click(function() {
+    hideclasses();
+    $(".javascript").show();
+  });
+
+  $("button#btnoperators").click(function() {
+    hideclasses();
+    $(".operators").show();
+  });
+});
+
+function hideclasses(){
+  $(".javascript").hide();
+  $(".operators").hide();
+  $(".variables").hide();
+  $(".functions").hide();
+}
+
+
+/*$(".warning").fadeOut();
 
 $(document).ready(function() {
   $(".clickable").click(function() {
@@ -7,6 +27,7 @@ $(document).ready(function() {
     $(".warning").fadeToggle(5000);
   });
 });
+*/
 
 /*$(function(){
   $("h1").click(function() {
