@@ -1,4 +1,24 @@
-$(function() {
+// For Prompt.html
+// Plain Javascript Example
+var $jsName = document.querySelector('.name');
+var $jsValue = document.querySelector('.jsValue');
+
+$jsName.addEventListener('input', function(event){
+  $jsValue.innerHTML = $jsName.value;
+}, false);
+
+
+// JQuery example
+var $jqName = $('.name');
+var $jqValue = $('.jqValue');
+
+$jqName.on('input', function(event){
+  $jqValue.html($jqName.val());
+});
+
+// For Flashcards.html
+
+/*$(function() {
   $("button#btnjavascript").click(function() {
     hideclasses();
     $(".javascript").show();
@@ -8,6 +28,11 @@ $(function() {
     hideclasses();
     $(".operators").show();
   });
+
+  $("button#btnvariables").click(function() {
+    hideclasses();
+    $(".variables").show();
+  });
 });
 
 function hideclasses(){
@@ -16,7 +41,6 @@ function hideclasses(){
   $(".variables").hide();
   $(".functions").hide();
 }
-
 
 /*$(".warning").fadeOut();
 
